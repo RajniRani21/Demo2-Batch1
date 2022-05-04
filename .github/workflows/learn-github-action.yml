@@ -28,12 +28,21 @@
         #run:  python githubaction.py
 
 name: main
+
+## Triggers the workflow on when there is a push, or
+
+## pull request on the main branch
+
 on: push
 jobs:
   job1:
-    run-on: ubuntu-latest
+    ## The type of runner that the job will run on
+    runs-on: ubuntu-latest
     env:
-      name1: "Rajni"
-    steps: 
-      -name: step 1
-       run: echo "the variable is:$name1"
+      ## Environment variable
+      API_KEY: XXXXXXXXXXXX    
+    steps:
+      - name: step 1
+        ## Reference your environment variables
+        # run: echo "The API key is:${{env.API_KEY}}"  
+        run: echo "The API key is:$API_KEY"  
