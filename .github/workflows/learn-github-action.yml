@@ -37,6 +37,7 @@ on: push
 env:
       ## Environment variable
   name1: "rajni"
+  name2: "saloni"
 jobs:
   job1:
     ## The type of runner that the job will run on
@@ -47,7 +48,7 @@ jobs:
     steps:
       - name: step 1
         ## Reference your environment variables
-        # run: echo "The API key is:${{env.API_KEY}}"  
+        # run: echo "The name is:${{env.name1}}"  
         run: echo "The name1 is:$name1"
   job2:
     ## The type of runner that the job will run on
@@ -59,4 +60,4 @@ jobs:
       - name: step 2
         ## Reference your environment variables
         # run: echo "The API key is:${{env.API_KEY}}"  
-        run: echo "The name1 is:$name1"  
+        run: echo "The name2 is:$name2"  
