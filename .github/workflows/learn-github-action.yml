@@ -30,9 +30,10 @@
 name: main
 on: push
 jobs:
-  run-on: ubuntu-latest
-  env:
-    name1: "Rajni"
-  steps: 
-    -name: step 1
-     run: echo "the variable is:$name1"
+  job1:
+    run-on: ubuntu-latest
+    env:
+      name1: "Rajni"
+    steps: 
+      -name: step 1
+       run: echo "the variable is:$name1"
