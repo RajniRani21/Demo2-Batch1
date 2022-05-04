@@ -40,9 +40,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ## Environment variable
-      API_KEY: XXXXXXXXXXXX    
+      name1: "rajni"
     steps:
       - name: step 1
         ## Reference your environment variables
         # run: echo "The API key is:${{env.API_KEY}}"  
-        run: echo "The API key is:$API_KEY"  
+        run: echo "The name1 is:$name1"  
