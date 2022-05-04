@@ -40,7 +40,6 @@ env:
   name2: "rani"
   name3: 10
   name4: 20
-  name5: name3+name4
 jobs:
   job1:
     ## The type of runner that the job will run on
@@ -63,4 +62,4 @@ jobs:
       - name: step 2
         ## Reference your environment variables
         # run: echo "The API key is:${{env.API_KEY}}"  
-        run: echo "The name5 is:$name5"  
+        run: echo "The name3 is:${{name3 + name4}}"  
