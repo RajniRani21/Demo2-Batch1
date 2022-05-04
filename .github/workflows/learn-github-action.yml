@@ -62,4 +62,4 @@ jobs:
       - name: step 2
         ## Reference your environment variables
         # run: echo "The API key is:${{env.API_KEY}}"  
-        run: echo "The name3 is:"$(($name3+$num4))
+        run: echo "The name3 is:"$(($name3+ $num4))
