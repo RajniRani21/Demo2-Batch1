@@ -4,6 +4,6 @@ on:
     - cron: "*/1 * * * *"
   jobs:
     runs-on: ubuntu-latest
-  steps:
+  step:
     - name: Run a one-line script
       run: echo Hello, world!
