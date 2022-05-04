@@ -1,9 +1,14 @@
 name: learn-github-actions
+
 on:
   schedule:
-    - cron: "*/1 * * * *"
-  jobs:
+    - cron: '*/1 * * * *'
+jobs:
+  build:
+
     runs-on: ubuntu-latest
-  step:
-    - name: Run a one-line script
-      run: echo Hello, world!
+
+    steps:
+      - uses: action/checkout@v1
+      - name: Run a one-line script
+        run: echo Hello, world!
