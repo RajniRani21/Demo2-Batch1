@@ -13,16 +13,26 @@
         #  python-version: '3.6'
       #- run: python --version
 
-name: learn-github-actions
-on: [push]
-jobs:
-  check-python-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v3
-        with:
-          python-version: '3.9'
-      - run: python --version
-      - name: python script
-        run:  python githubaction.py
+#name: learn-github-actions
+#on: [push]
+#jobs:
+  #check-python-version:
+    #runs-on: ubuntu-latest
+    #steps:
+      #- uses: actions/checkout@v3
+      #- uses: actions/setup-python@v3
+        #with:
+          #python-version: '3.9'
+      #- run: python --version
+      #- name: python script
+        #run:  python githubaction.py
+
+name: main
+on: push
+job:
+  run-on: ubuntu-latest
+  env:
+    name: "Rajni"
+  steps: 
+    -name: step 1
+     run: echo "the name is:$name"
