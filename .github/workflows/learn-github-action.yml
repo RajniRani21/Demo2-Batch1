@@ -35,4 +35,4 @@ jobs:
     name1: "Rajni"
   steps: 
     -name: step 1
-     run: "the variable is:$name1"
+     run: echo "the variable is:$name1"
