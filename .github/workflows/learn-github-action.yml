@@ -29,7 +29,7 @@
 
 name: main
 on: push
-job:
+jobs:
   run-on: ubuntu-latest
   env:
     name1: "Rajni"
