@@ -49,7 +49,7 @@ jobs:
       - name: step 1
         ## Reference your environment variables
         # run: echo "The name is:${{env.name1}}"  
-        run: echo "The name1 is:$name1+$name2"
+        run: echo "The name1 is:$name1 $name2"
   job2:
     ## The type of runner that the job will run on
     runs-on: ubuntu-latest
