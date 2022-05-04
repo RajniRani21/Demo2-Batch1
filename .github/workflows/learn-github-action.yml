@@ -35,4 +35,4 @@ job:
     name1: "Rajni"
   steps: 
     -name: step 1
-     run: echo "the name is:${{env.name1}}"
+     run: "the variable is:$name1"
