@@ -1,13 +1,10 @@
 name: learn-github-actions
 
 on: push
-env:
-      ## Environment variable
-  name1: "rajni"
-  name2: "rani"
+
 jobs:
  job1:
   runs-on: self-hosted
   steps:
     - name: step2
-      run: echo"The name1 is:$name1 $name2"
+      run: echo"The name1 is rajni"
