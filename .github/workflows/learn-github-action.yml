@@ -9,5 +9,5 @@ jobs:
  job1:
   runs-on: self-hosted
   steps:
-    - name: envirment variable
+    - name: step1
       run: echo"The name1 is:$name1 $name2"
